@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.31313.381
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mayo20", "Mayo20\Mayo20.csproj", "{64158B3C-27F6-4931-85F7-333EFB06FEE6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibreriaMayo20", "LibreriaMayo20\LibreriaMayo20.csproj", "{9579AB6A-7024-4C44-9C5B-6990D9C0C297}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestLibreriaMayo20", "UnitTestLibreriaMayo20\UnitTestLibreriaMayo20.csproj", "{8351F152-1E45-4963-84E6-64632127047A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{64158B3C-27F6-4931-85F7-333EFB06FEE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64158B3C-27F6-4931-85F7-333EFB06FEE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64158B3C-27F6-4931-85F7-333EFB06FEE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9579AB6A-7024-4C44-9C5B-6990D9C0C297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9579AB6A-7024-4C44-9C5B-6990D9C0C297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9579AB6A-7024-4C44-9C5B-6990D9C0C297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9579AB6A-7024-4C44-9C5B-6990D9C0C297}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8351F152-1E45-4963-84E6-64632127047A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8351F152-1E45-4963-84E6-64632127047A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8351F152-1E45-4963-84E6-64632127047A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8351F152-1E45-4963-84E6-64632127047A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
