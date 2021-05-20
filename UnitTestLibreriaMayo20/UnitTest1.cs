@@ -26,10 +26,14 @@ namespace UnitTestLibreriaMayo20
 
             var mockCiudades=new Mock<DbSet<City>>();
             // placeholder
-            mockCiudades.As<IQueryable<City>>().Setup(m => m.Provider).Returns(ciudades.Provider);
-            mockCiudades.As<IQueryable<City>>().Setup(m => m.Expression).Returns(ciudades.Expression);
-            mockCiudades.As<IQueryable<City>>().Setup(m => m.ElementType).Returns(ciudades.ElementType);
-            mockCiudades.As<IQueryable<City>>().Setup(m => m.GetEnumerator()).Returns(ciudades.GetEnumerator());
+            mockCiudades.As<IQueryable<City>>()
+                .Setup(m => m.Provider).Returns(ciudades.Provider);
+            mockCiudades.As<IQueryable<City>>()
+                .Setup(m => m.Expression).Returns(ciudades.Expression);
+            mockCiudades.As<IQueryable<City>>()
+                .Setup(m => m.ElementType).Returns(ciudades.ElementType);
+            mockCiudades.As<IQueryable<City>>()
+                .Setup(m => m.GetEnumerator()).Returns(ciudades.GetEnumerator());
 
             var mockSakila=new Mock<SakilaContexto>();
             mockSakila.Setup(c=>c.city).Returns(mockCiudades.Object);
@@ -39,10 +43,10 @@ namespace UnitTestLibreriaMayo20
             Assert.AreEqual(3,repo.ListarTodo().Count);
 
 
-            var ciudadNueva=new City {city_id=1,city1="Canada"};
-            Assert.AreEqual(1,repo.Insertar(ciudadNueva));
+            var ciudadNueva=new City {city_id=4,city1="Canada"};
+            Assert.AreEqual(4,repo.Insertar(ciudadNueva));
 
-            Assert.AreEqual("Chile",repo.Obtener(1).city1);
+            Assert.AreEqual("Canada",repo.Obtener(4).city1);
 
 
 
